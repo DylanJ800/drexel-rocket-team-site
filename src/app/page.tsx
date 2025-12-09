@@ -27,7 +27,7 @@ export default function AVXLanding() {
             <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
               Building the Future of <span className="text-white">Student Launch</span>
             </h1>
-            <p className="max-w-xl text-gray-300">We’re a student team designing and testing liquid rocket engines and launch systems. From pressure‑fed V1 to pump‑fed V2, we iterate fast, test often, and fly higher.</p>
+            <p className="max-w-xl text-gray-300">We’re a student team designing and testing liquid rocket engines and launch systems. From pressure‑fed to pump‑fed cycles, we iterate fast, test often, and fly higher.</p>
             <div className="flex flex-wrap gap-3">
               <a href="#development" className="rounded-2xl bg-[#00539B] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#003f79]">Explore Development</a>
               <a href="#contact" className="rounded-2xl border border-[#00539B]/50 px-5 py-2.5 text-sm font-medium hover:bg-[#00539B]/10">Join the Team</a>
@@ -69,8 +69,8 @@ export default function AVXLanding() {
           <h2 className="text-2xl font-semibold md:text-3xl text-[#00539B]">Engines in Development</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
             {[
-              {name:"V1 — Pressure-Fed System", details:"V1 is a pressure-fed, bi-propellant engine utilizing E85 and Nitrous Oxide (N2O). Designed for reliability and modular testing, V1 serves as a platform to validate plumbing, controls, and ignition systems."},
-              {name:"V2 — Pump-Fed Expander Cycle", details:"V2 will be a pump-fed engine running on an expander cycle with regenerative cooling and film cooling. It targets between 1,000 and 3,000 lbf of thrust, making it one of the most ambitious student-built liquid engines."},
+              {name:"Ambition 1 — Pressure-Fed System", details:"V1 is a pressure-fed, bi-propellant engine utilizing E85 and Nitrous Oxide (N2O). Designed for reliability and modular testing, V1 serves as a platform to validate plumbing, controls, and ignition systems."},
+              {name:"Dragon 1 — Pump-Fed Expander Cycle", details:"V2 will be a pump-fed engine running on an expander cycle with regenerative cooling and film cooling. It targets between 1,000 and 3,000 lbf of thrust, making it one of the most ambitious student-built liquid engines."},
             ].map((d, i) => (
               <div key={i} className="rounded-3xl border border-white/10 bg-white/5 p-6">
                 <h3 className="text-lg font-medium text-white">{d.name}</h3>
