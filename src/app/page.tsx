@@ -87,9 +87,9 @@ export default function AVXLanding() {
           <h2 className="text-2xl font-semibold md:text-3xl text-[#00539B]">Leadership</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              {name:"Dylan Joseph", role:"President & Chief Engineer", blurb:"Leads overall architecture, propulsion R&D, and oversees all development and testing phases."},
-              {name:"Quincy Daniels", role:"Lead Computer & Electrical Engineer", blurb:"Responsible for avionics, electrical systems integration, and control software development."},
-              {name:"William Richards", role:"Lead Engineer", blurb:"Focuses on structural design, propulsion engineering, mechanical integration, and engine assembly."},
+              {name:"Dylan Joseph", role:"President & Chief Engineer", blurb:"Leads all architecture & R&D. Oversees all development and testing phases."},
+              {name:"Quiency Daniels", role:"Lead Electrical/Avionics Engineer", blurb:"Responsible for avionics, electrical systems integration, and control software development."},
+              {name:"William Richards", role:"Lead Propulsion Engineer", blurb:"Focuses on structural design, propulsion engineering, mechanical integration, and engine assembly."},
               {name:"Harnoor Singh", role:"Lead Engineer", blurb:"Supports propulsion development and analysis."},
               {name:"James Holly", role:"Operations Lead", blurb:"Will coordinate logistics, documentation, and test operations as the team grows."},
             ].map((m, i) => (
