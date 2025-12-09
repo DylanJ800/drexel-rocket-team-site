@@ -69,8 +69,8 @@ export default function AVXLanding() {
           <h2 className="text-2xl font-semibold md:text-3xl text-[#00539B]">Engines in Development</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
             {[
-              {name:"Ambition 1 — Pressure-Fed System", details:"V1 is a pressure-fed, bi-propellant engine utilizing E85 and Nitrous Oxide (N2O). Designed for reliability and modular testing, V1 serves as a platform to validate plumbing, controls, and ignition systems."},
-              {name:"Dragon 1 — Pump-Fed Expander Cycle", details:"V2 will be a pump-fed engine running on an expander cycle with regenerative cooling and film cooling. It targets between 1,000 and 3,000 lbf of thrust, making it one of the most ambitious student-built liquid engines."},
+              {name:"Ambition 1 — Pressure-Fed System", details:"Ambition 1 is a pressure-fed, bi-propellant engine utilizing E85 and Nitrous Oxide (N2O). Designed for reliability and modular testing, Ambition 1 serves as a platform to validate plumbing, controls, and ignition systems."},
+              {name:"Dragon 1 — Pump-Fed Expander Cycle", details:"Dragon 1 will be a pump-fed engine running on an expander cycle with regenerative cooling and film cooling. It targets between 1,000 and 3,000 lbf of thrust, making it one of the most ambitious student-built liquid engines."},
             ].map((d, i) => (
               <div key={i} className="rounded-3xl border border-white/10 bg-white/5 p-6">
                 <h3 className="text-lg font-medium text-white">{d.name}</h3>
