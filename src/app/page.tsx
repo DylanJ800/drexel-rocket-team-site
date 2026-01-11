@@ -10,10 +10,10 @@ export default function AVXLanding() {
             <li><a className="hover:text-[#00539B]" href="#mission">Mission</a></li>
             <li><a className="hover:text-[#00539B]" href="#development">Development</a></li>
             <li><a className="hover:text-[#00539B]" href="#team">Team</a></li>
-            <li><a className="hover:text-[#00539B]" href="#sponsors">Sponsors</a></li>
-            <li><a className="hover:text-[#00539B]" href="#contact">Contact</a></li>
+            <li><a className="hover:text-[#00539B]" href="#sponsors">Sponsors</a></li> 
           </ul>
-          <a href="#contact" className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60">Join Us</a>
+          <a href="/positions" className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60">Open Positions</a>
+
         </nav>
       </header>
 
@@ -69,8 +69,8 @@ export default function AVXLanding() {
           <h2 className="text-2xl font-semibold md:text-3xl text-[#00539B]">Engines in Development</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
             {[
-              {name:"Ambition 1 — Pressure-Fed System", details:"Ambition 1 is a pressure-fed, bi-propellant engine utilizing E85 and Nitrous Oxide (N2O). Designed for reliability and modular testing, Ambition 1 serves as a platform to validate plumbing, controls, and ignition systems."},
-              {name:"Dragon 1 — Pump-Fed Expander Cycle", details:"Dragon 1 will be a pump-fed engine running on an expander cycle with regenerative cooling and film cooling. It targets between 1,000 and 3,000 lbf of thrust, making it one of the most ambitious student-built liquid engines."},
+              {name:"Ambition One — Pressure-Fed System", details:"Ambition One is a pressure-fed, bi-propellant engine utilizing E85 and Nitrous Oxide (N2O). Designed for reliability and modular testing, Ambition 1 serves as a platform to validate plumbing, controls, and ignition systems."},
+              {name:"Dragon One — Pump-Fed Expander Cycle", details:"Dragon One will be a pump-fed engine running on an expander cycle with regenerative cooling and film cooling. It targets between 1,000 and 3,000 lbf of thrust, making it one of the most ambitious student-built liquid engines."},
             ].map((d, i) => (
               <div key={i} className="rounded-3xl border border-white/10 bg-white/5 p-6">
                 <h3 className="text-lg font-medium text-white">{d.name}</h3>
@@ -115,21 +115,6 @@ export default function AVXLanding() {
               <div key={i} className="flex h-20 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-xs text-gray-400">Logo</div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="border-y border-white/5 bg-gradient-to-b from-zinc-950 to-black">
-        <div className="mx-auto max-w-3xl px-6 py-20">
-          <h2 className="text-2xl font-semibold md:text-3xl text-[#00539B]">Join the Team</h2>
-          <p className="mt-2 text-sm text-gray-300">We recruit builders across disciplines. Tell us what you want to own, and we’ll hand you a problem worth solving.</p>
-          <form className="mt-8 grid gap-4 md:grid-cols-2">
-            <input className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00539B]/40 md:col-span-1" placeholder="Full name" />
-            <input className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00539B]/40 md:col-span-1" placeholder="Email" />
-            <input className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00539B]/40 md:col-span-2" placeholder="Role of interest (e.g., Propulsion)" />
-            <textarea className="min-h-[120px] rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00539B]/40 md:col-span-2" placeholder="What do you want to build?" />
-            <button type="button" className="md:col-span-2 rounded-2xl bg-[#00539B] px-5 py-3 text-sm font-medium text-white hover:bg-[#003f79]">Submit</button>
-          </form>
         </div>
       </section>
 
