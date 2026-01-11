@@ -88,9 +88,9 @@ export default function AVXLanding() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {name:"Dylan Joseph", role:"President & Chief Engineer", blurb:"Leads all architecture & R&D. Oversees all development and testing phases."},
-              {name:"Quiency Daniels", role:"Lead Electrical/Avionics Engineer", blurb:"Responsible for avionics, electrical systems integration, and control software development."},
-              {name:"William Richards", role:"Lead Propulsion Engineer", blurb:"Focuses on structural design, propulsion engineering, mechanical integration, and engine assembly."},
-              {name:"Harnoor Singh", role:"Lead Engineer", blurb:"Supports propulsion development and analysis."},
+              {name:"Quiency Daniels", role:"Lead GNC Engineer", blurb:"Responsible for avionics, electrical systems integration, and control software development."},
+              {name:"William Richards", role:"Lead Propulsion Engineer", blurb:"Focuses on structural design, propulsion engineering, combustion devices, and engine assembly."},
+              {name:"Harnoor Singh", role:"Lead Propulsion Engineer", blurb:"Supports propulsion development and analysis."},
               {name:"James Holly", role:"Operations Lead", blurb:"Will coordinate logistics, documentation, and test operations as the team grows."},
             ].map((m, i) => (
               <div key={i} className="rounded-3xl border border-white/10 bg-white/5 p-6">
