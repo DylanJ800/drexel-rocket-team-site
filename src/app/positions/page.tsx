@@ -80,6 +80,7 @@ export default function PositionsPage() {
           </h1>
           <p className="mt-3 max-w-2xl text-sm text-gray-300">
             We recruit builders across disciplines. Define your mark today.
+            Currently Front End Only -- For positions please email dsj53@drexel.edu
           </p>
 
           <div className="mt-10 overflow-hidden rounded-3xl border border-white/10 bg-white/5">
