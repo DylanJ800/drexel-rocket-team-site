@@ -17,7 +17,7 @@ const POSITIONS: Position[] = [
     id: "prop-combustion-devices",
   },
   {
-    title: "Propulsion Engineer",
+    title: "Propulsion Engineer II",
     discipline: "PROP",
     program: "Dragon One",
     id: "prop-combustion-devices1",
@@ -34,6 +34,31 @@ const POSITIONS: Position[] = [
     program: "Ambition One",
     id: "prop-combustion-devices3",
   },
+      {
+    title: "Lead Manufacturing Engineer",
+    discipline: "PROP",
+    program: "Dragon One",
+    id: "prop-combustion-devices3",
+  },
+        {
+    title: "Manufacturing Engineer",
+    discipline: "MECH",
+    program: "Dragon One",
+    id: "prop-combustion-devices3",
+  },
+        {
+    title: "Network Engineer",
+    discipline: "IT",
+    program: "SIMLAB",
+    id: "prop-combustion-devices3",
+  },
+      {
+    title: "Funding Specialist (Sponsorships)",
+    discipline: "OPS",
+    program: "Dragon One",
+    id: "prop-combustion-devices3",
+  },
+  
   
   // Add more here:
   // { title: "Avionics Engineer (Flight Computer)", discipline: "AVX", id: "avx-flight-computer" },
