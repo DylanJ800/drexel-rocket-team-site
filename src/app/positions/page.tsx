@@ -52,6 +52,24 @@ const POSITIONS: Position[] = [
     program: "SIMLAB",
     id: "prop-combustion-devices6",
   },
+         {
+    title: "HITL (Hardware-in-the-loop) Engineer",
+    discipline: "IT",
+    program: "SIMLAB",
+    id: "prop-combustion-devices9",
+  },
+         {
+    title: "Data Engineer",
+    discipline: "IT",
+    program: "SIMLAB",
+    id: "prop-combustion-devices10",
+  },
+         {
+    title: "Test Systems Engineer",
+    discipline: "IT",
+    program: "SIMLAB",
+    id: "prop-combustion-devices11",
+  },
       {
     title: "Funding Specialist (Sponsorships)",
     discipline: "OPS",
