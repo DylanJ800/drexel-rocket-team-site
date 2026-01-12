@@ -58,6 +58,12 @@ const POSITIONS: Position[] = [
     program: "Dragon One",
     id: "prop-combustion-devices7",
   },
+       {
+    title: "Marketing Specialist",
+    discipline: "OPS",
+    program: "Dragon One",
+    id: "prop-combustion-devices8",
+  },
   
   
   // Add more here:
