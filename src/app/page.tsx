@@ -1,5 +1,8 @@
 
 export default function AVXLanding() {
+  const sponsors = [
+    { name: "Synnax", logo: "/sponsors/synnax.png" },
+  ];
   return (
     <div className="min-h-screen bg-black text-gray-100 selection:bg-white/20">
       {/* NAVBAR */}
@@ -111,8 +114,17 @@ export default function AVXLanding() {
             <a href="#" className="text-sm text-gray-400 hover:text-[#00539B]">Sponsor us →</a>
           </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            {Array.from({length: 8}).map((_, i) => (
-              <div key={i} className="flex h-20 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-xs text-gray-400">Logo</div>
+            {sponsors.map((s, i) => (
+              <div
+                key={i}
+                className="flex h-24 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4"
+              >
+                <img
+                  src={s.logo}
+                  alt={s.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
