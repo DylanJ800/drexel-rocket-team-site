@@ -13,7 +13,8 @@ export default function AVXLanding() {
             <li><a className="hover:text-[#00539B]" href="#mission">Mission</a></li>
             <li><a className="hover:text-[#00539B]" href="#development">Development</a></li>
             <li><a className="hover:text-[#00539B]" href="#team">Team</a></li>
-            <li><a className="hover:text-[#00539B]" href="#sponsors">Sponsors</a></li> 
+            <li><a className="hover:text-[#00539B]" href="#sponsors">Sponsors</a></li>
+            <li><a className="hover:text-[#00539B]" href="/countdown">Countdown</a></li> 
           </ul>
           <a href="/positions" className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60">Open Positions</a>
 
