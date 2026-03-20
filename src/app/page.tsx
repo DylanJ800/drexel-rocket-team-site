@@ -1,3 +1,4 @@
+import CountdownBadge from "@/Components/CountdownBadge";
 
 export default function AVXLanding() {
   const sponsors = [
@@ -16,8 +17,16 @@ export default function AVXLanding() {
             <li><a className="hover:text-[#00539B]" href="#sponsors">Sponsors</a></li>
             <li><a className="hover:text-[#00539B]" href="/countdown">Countdown</a></li> 
           </ul>
-          <a href="/positions" className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60">Open Positions</a>
-
+          {/* <a href="/positions" className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60">Open Positions</a> */}
+          <div className="flex items-center gap-3">
+            <CountdownBadge />
+            <a
+              href="/positions"
+              className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60"
+            >
+              Open Positions
+            </a>
+          </div>
         </nav>
       </header>
 
