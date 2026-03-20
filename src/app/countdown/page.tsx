@@ -13,15 +13,15 @@ type TimelineItem = {
   event: string;
 };
 
-const staticFireDate = new Date("2026-03-28T12:00:00"); // <-- CHANGE THIS
+const staticFireDate = new Date("2026-03-28T12:00:00");
 
 const statusItems: StatusItem[] = [
-  { label: "Range", state: "GO", note: "Clear and green" },
+  { label: "Range", state: "GO", note: "Range is green" },
   { label: "Weather", state: "GO", note: "Within limits" },
-  { label: "GSE", state: "GO", note: "Systems online" },
-  { label: "Avionics", state: "GO", note: "Telemetry active" },
-  { label: "Ignition", state: "GO", note: "Circuit armed and verified" },
-  { label: "Propulsion", state: "GO", note: "Ready for sequence" },
+  { label: "GSE", state: "HOLD", note: "Awaiting Propellant" },
+  { label: "GNC", state: "HOLD", note: "Pending DDR" },
+  { label: "Stage 0", state: "GO", note: "Ready" },
+  { label: "Propulsion", state: "HOLD", note: "Awaiting final checks" },
   { label: "Operations", state: "HOLD", note: "Awaiting final checklist closeout" },
 ];
 
@@ -30,11 +30,15 @@ const timeline: TimelineItem[] = [
   { time: "00:20:00", event: "Range verified clear" },
   { time: "00:15:00", event: "Ground systems final verification" },
   { time: "00:10:00", event: "Telemetry and controls final check" },
-  { time: "00:07:00", event: "Ignition system armed" },
-  { time: "00:05:00", event: "Propellant system final readiness" },
+  { time: "00:07:00", event: "Operator Sequence Start" },
+  { time: "00:05:00", event: "NOx load start" },
+  { time: "00:04:00", event: "NOx load complete"},
   { time: "00:02:00", event: "Final Go / No-Go call" },
+  { time: "00:01:00", event: "Operator arm ignition system"},
   { time: "00:00:10", event: "Ignition sequence start" },
   { time: "00:00:00", event: "STATIC FIRE" },
+  { time: "+ 00:00:05", event: "Shutdown"},
+  { time: "+ 00:01:00", event: "Safing sequencing start"}
 ];
 
 function formatTime(ms: number) {
