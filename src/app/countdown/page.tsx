@@ -18,7 +18,7 @@ const staticFireDate = new Date("2026-03-28T12:00:00");
 const statusItems: StatusItem[] = [
   { label: "Range", state: "GO", note: "Range is green" },
   { label: "Weather", state: "GO", note: "Within limits" },
-  { label: "GSE", state: "GO", note: "Awaiting Propellant" },
+  { label: "GSE", state: "GO", note: "Ready" },
   { label: "GNC", state: "HOLD", note: "Pending DDR" },
   { label: "Stage 0", state: "GO", note: "Ready" },
   { label: "Propulsion", state: "HOLD", note: "Awaiting final checks" },
