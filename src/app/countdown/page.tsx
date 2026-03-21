@@ -22,7 +22,7 @@ const statusItems: StatusItem[] = [
   { label: "GNC", state: "HOLD", note: "Pending DDR" },
   { label: "Stage 0", state: "GO", note: "Ready" },
   { label: "Propulsion", state: "HOLD", note: "Awaiting final checks" },
-  { label: "Operations", state: "HOLD", note: "Awaiting final checklist closeout" },
+  { label: "Operations", state: "GO", note: "Ready" },
 ];
 
 const timeline: TimelineItem[] = [
