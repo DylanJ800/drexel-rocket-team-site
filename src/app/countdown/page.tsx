@@ -21,7 +21,7 @@ const statusItems: StatusItem[] = [
   { label: "GSE", state: "GO", note: "Ready" },
   { label: "GNC", state: "HOLD", note: "Pending DDR" },
   { label: "Stage 0", state: "GO", note: "Ready" },
-  { label: "Propulsion", state: "HOLD", note: "Awaiting final checks" },
+  { label: "Propulsion", state: "GO", note: "Ready" },
   { label: "Operations", state: "GO", note: "Ready" },
 ];
 
