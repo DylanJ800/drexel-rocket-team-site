@@ -19,7 +19,7 @@ const statusItems: StatusItem[] = [
   { label: "Range", state: "GO", note: "Range is green" },
   { label: "Weather", state: "GO", note: "Within limits" },
   { label: "GSE", state: "GO", note: "Ready" },
-  { label: "GNC", state: "HOLD", note: "Pending DDR" },
+  { label: "GNC", state: "GO", note: "Pending DDR" },
   { label: "Stage 0", state: "GO", note: "Ready" },
   { label: "Propulsion", state: "GO", note: "Ready" },
   { label: "Operations", state: "GO", note: "Ready" },
