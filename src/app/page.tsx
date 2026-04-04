@@ -31,9 +31,25 @@ export default function AVXLanding() {
       </header>
 
       {/* HERO */}
-      <section id="home" className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_60%_at_50%_0%,rgba(0,83,155,0.3)_0%,transparent_60%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(40%_50%_at_80%_10%,rgba(255,255,255,0.08)_0%,transparent_60%)]" />
+      <section id="home" className="relative overflow-hidden min-h-[78vh]">
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover object-[center_60%] opacity-60 [filter:brightness(0.8)_contrast(1.2)]"
+        >
+          <source src="/media/staticfire.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark overlay */}
+        <div className="pointer-events-none absolute inset-0 bg-black/20" />
+
+        {/* Blue atmospheric glow */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_60%_at_50%_0%,rgba(0,83,155,0.25)_0%,transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(40%_50%_at_80%_10%,rgba(255,255,255,0.05)_0%,transparent_60%)]" />
+
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 md:py-32 lg:grid-cols-12 lg:items-center">
           <div className="relative z-10 space-y-6 lg:col-span-6">
             <p className="text-xs tracking-[0.3em] text-gray-400">STUDENT-LAUNCHED • ENGINEERED TO FLY</p>

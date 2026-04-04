@@ -13,7 +13,7 @@ type TimelineItem = {
   event: string;
 };
 
-const staticFireDate = new Date("2026-03-28T12:00:00");
+const staticFireDate = new Date("2026-05-15T12:00:00");
 
 const statusItems: StatusItem[] = [
   { label: "Range", state: "GO", note: "Range is green" },
