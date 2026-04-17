@@ -40,7 +40,7 @@ export default function AVXLanding() {
           playsInline
           className="absolute inset-0 h-full w-full object-cover object-[center_60%] opacity-60 [filter:brightness(0.8)_contrast(1.2)]"
         >
-          <source src="https://9ybvedfjqwiydwec.public.blob.vercel-storage.com/web2.mp4" />
+          <source src="https://youtu.be/oqMHRvFkqLQ" />
         </video>
 
         {/* Dark overlay */}
