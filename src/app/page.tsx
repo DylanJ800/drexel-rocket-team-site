@@ -119,7 +119,7 @@ export default function AVXLanding() {
               {name:"Dylan Joseph", role:"President & Chief Engineer", blurb:"Leads all architecture & R&D. Oversees all development and testing phases."},
               {name:"Quincey Daniel", role:"Lead GNC Engineer", blurb:"Responsible for avionics, electrical systems integration, and control software development."},
               {name:"William Richards", role:"Lead Propulsion Engineer", blurb:"Focuses on structural design, propulsion engineering, combustion devices, and engine assembly."},
-              {name:"Harnoor Singh", role:"Lead Stage 0 Engineer", blurb:"Focuses on test stand equipment, ground service equipment, and pad operations."},
+              {name:"Joe Maddi", role:"Lead Stage 0 Engineer", blurb:"Focuses on test stand equipment, ground service equipment, and pad operations."},
               {name:"Dhruv Patel", role:"Operations Lead", blurb:"Will coordinate logistics, documentation, and test operations as the team grows."},
             ].map((m, i) => (
               <div key={i} className="rounded-3xl border border-white/10 bg-white/5 p-6">
