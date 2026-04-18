@@ -14,26 +14,39 @@ export default function AmbitionOnePage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/5">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-35"
-          style={{ backgroundImage: "url('/media/ambition-one-hero.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-black/55" />
+        {/* Background Video */}
+        <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover object-[center_60%] opacity-70 [filter:brightness(0.9)_contrast(1.1)]"
+        >
+            <source src="https://pub-3d662e494b1c45c88a2d801567a6598f.r2.dev/SF1.mp4" />
+        </video>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Glow */}
         <div className="absolute inset-0 bg-[radial-gradient(50%_60%_at_50%_0%,rgba(0,83,155,0.25)_0%,transparent_60%)]" />
 
+        {/* Content (UNCHANGED SIZE) */}
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
-          <p className="text-xs tracking-[0.3em] text-gray-400">
+            <p className="text-xs tracking-[0.3em] text-gray-400">
             PRESSURE-FED DEVELOPMENT PROGRAM
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
+            </p>
+
+            <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
             Ambition One
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg text-gray-300">
+            </h1>
+
+            <p className="mt-5 max-w-3xl text-lg text-gray-300">
             Ambition One is Drexel Rocket Team’s pressure-fed liquid engine
             development program, built to validate propulsion hardware,
             ignition, controls, plumbing, and test operations through real
             campaign execution.
-          </p>
+            </p>
         </div>
       </section>
 
