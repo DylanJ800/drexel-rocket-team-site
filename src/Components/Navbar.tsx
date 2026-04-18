@@ -6,7 +6,7 @@ import CountdownBadge from "@/Components/CountdownBadge";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const dropdownRef = useRef<HTMLLIElement | null>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
