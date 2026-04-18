@@ -60,7 +60,7 @@ export default function AmbitionOnePage() {
 
           <div className="lg:col-span-6">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-3">
-              <div className="aspect-[16/10] w-full rounded-2xl bg-zinc-900/70 bg-[url('/media/ambition-one-feature.jpg')] bg-cover bg-center" />
+              <div className="aspect-[16/10] w-full rounded-2xl bg-zinc-900/70 bg-[url('/media/am1.png')] bg-cover bg-center" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function AmbitionOnePage() {
         <div className="mx-auto max-w-7xl px-6 py-20">
           <div className="grid gap-12 lg:grid-cols-2">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-3">
-              <div className="aspect-video rounded-2xl bg-zinc-900/70 bg-[url('/media/ambition-one-gallery-1.jpg')] bg-cover bg-center" />
+              <div className="aspect-video rounded-2xl bg-zinc-900/70 bg-[url('/media/am2.jpg')] bg-cover bg-center" />
             </div>
 
             <div className="flex flex-col justify-center">
