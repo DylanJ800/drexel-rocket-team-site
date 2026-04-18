@@ -19,6 +19,13 @@ export default function AVXLanding() {
         "Dragon One is our next-generation pump-fed engine architecture focused on regenerative cooling, film cooling, and higher-performance collegiate liquid propulsion development.",
       href: "/dragon-one",
     },
+    {
+      name: "Condor",
+      subtitle: "Launch Vehicle Program",
+      details:
+        "VEHICLE_NAME is a future launch vehicle concept planned as part of the team’s long-term development roadmap. The program is currently conceptual and is not yet in active development.",
+      href: "/Condor",
+    },
   ];
 
   const leadershipPreview = [

@@ -67,13 +67,26 @@ export default function Navbar() {
                 <Link
                   href="/dragon-one"
                   onClick={() => setOpen(false)}
-                  className="block px-5 py-4 transition hover:bg-white/5"
+                  className="block border-b border-white/5 px-5 py-4 transition hover:bg-white/5"
                 >
                   <div className="text-sm font-medium text-white">
                     Dragon One
                   </div>
                   <div className="mt-1 text-xs text-gray-400">
                     Pump-fed next-generation development
+                  </div>
+                </Link>
+
+                <Link
+                  href="/condor"
+                  onClick={() => setOpen(false)}
+                  className="block px-5 py-4 transition hover:bg-white/5"
+                >
+                  <div className="text-sm font-medium text-white">
+                    Condor
+                  </div>
+                  <div className="mt-1 text-xs text-gray-400">
+                    Long-term launch vehicle program • NET 2028
                   </div>
                 </Link>
               </div>
