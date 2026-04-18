@@ -139,17 +139,45 @@ export default function AmbitionOnePage() {
       <section className="bg-black">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <p className="text-xs tracking-[0.3em] text-gray-500">GALLERY</p>
+
           <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
             Program visuals
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {[1, 2, 3].map((item) => (
+            {[
+              {
+                src: "/media/am4.png",
+                label: "Static Fire",
+              },
+              {
+                src: "/media/amb3.jpg",
+                label: "Test Setup",
+              },
+              {
+                src: "/media/am1.png",
+                label: "Ignition",
+              },
+            ].map((item, index) => (
               <div
-                key={item}
-                className="rounded-3xl border border-white/10 bg-white/5 p-3"
+                key={index}
+                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5"
               >
-                <div className="aspect-[4/3] rounded-2xl bg-zinc-900/70" />
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                  <img
+                    src={item.src}
+                    alt={item.label}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+
+                  {/* overlay */}
+                  <div className="absolute inset-0 bg-black/20 opacity-0 transition group-hover:opacity-100" />
+
+                  {/* label */}
+                  <div className="absolute bottom-3 left-3 text-sm text-white opacity-0 transition group-hover:opacity-100">
+                    {item.label}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
