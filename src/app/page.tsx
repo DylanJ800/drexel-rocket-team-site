@@ -20,10 +20,10 @@ export default function AVXLanding() {
       href: "/dragon-one",
     },
     {
-      name: "Condor",
+      name: "Chariot",
       subtitle: "Launch Vehicle Program",
       details:
-        "Condor is a future launch vehicle concept planned as part of the team’s long-term development roadmap. The program is currently conceptual and is not yet in active development.",
+        "Chariot is a future launch vehicle concept planned as part of the team’s long-term development roadmap. The program is currently conceptual and is not yet in active development.",
       href: "/condor",
     },
   ];
