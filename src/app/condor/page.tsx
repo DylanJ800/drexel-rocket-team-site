@@ -36,7 +36,7 @@ export default function VehiclePage() {
           </p>
 
           <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
-            Condor
+            Chariot
           </h1>
 
           <p className="mt-4 inline-block rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-200 backdrop-blur">
@@ -55,7 +55,7 @@ export default function VehiclePage() {
             </h2>
 
             <p className="mt-5 text-gray-300">
-              Condor is a future launch vehicle concept envisioned as part
+              Chariot is a future launch vehicle concept envisioned as part
               of the Drexel Rocket Team’s broader long-term development plan.
               The program is intended to build on the team’s propulsion and
               systems experience over time and eventually support a more complete
@@ -63,7 +63,7 @@ export default function VehiclePage() {
             </p>
 
             <p className="mt-4 text-gray-300">
-              At this stage, Condor is not yet an active hardware
+              At this stage, Chariot is not yet an active hardware
               development program. It is currently a forward-looking concept and
               roadmap element rather than an ongoing build campaign.
             </p>
