@@ -78,7 +78,7 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  href="/condor"
+                  href="/Condor"
                   onClick={() => setOpen(false)}
                   className="block px-5 py-4 transition hover:bg-white/5"
                 >
