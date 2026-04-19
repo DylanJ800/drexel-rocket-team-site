@@ -83,7 +83,7 @@ export default function Navbar() {
                   className="block px-5 py-4 transition hover:bg-white/5"
                 >
                   <div className="text-sm font-medium text-white">
-                    Condor
+                    Chariot
                   </div>
                   <div className="mt-1 text-xs text-gray-400">
                     Long-term launch vehicle program • NET 2028
