@@ -1,4 +1,7 @@
+"use client";
+
 import Navbar from "@/Components/Navbar";
+import { motion } from "framer-motion";
 
 const specs = [
   { label: "Cycle", value: "Pump-Fed" },
@@ -10,25 +13,39 @@ const specs = [
 const pillars = [
   {
     title: "Pump-fed architecture",
-    body: "A step toward higher-performance liquid propulsion with a more advanced system architecture.",
+    body: "Development toward a more advanced liquid propulsion system with higher performance potential.",
   },
   {
     title: "Thermal management",
-    body: "Focused development around regenerative cooling, film cooling, and heat-transfer constraints.",
+    body: "Exploration of regenerative cooling, film cooling, and system-level thermal constraints.",
   },
   {
     title: "Integrated R&D",
-    body: "Cross-disciplinary iteration spanning propulsion, controls, structures, operations, and testing.",
+    body: "Cross-disciplinary iteration spanning propulsion, controls, structures, operations, and test methodology.",
   },
 ];
 
 const roadmap = [
   "Architecture definition",
-  "Cycle analysis",
+  "Cycle analysis and system modeling",
   "Turbopump development",
   "Subsystem prototyping",
   "Integrated hot-fire campaign",
 ];
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const stagger = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
 
 export default function DragonOnePage() {
   return (
@@ -37,12 +54,21 @@ export default function DragonOnePage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/5">
+        <motion.div
+          animate={{ backgroundPosition: ["0px 0px", "80px 80px"] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+          className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] opacity-20"
+        />
         <div className="absolute inset-0 bg-[radial-gradient(60%_70%_at_50%_0%,rgba(0,83,155,0.35)_0%,transparent_65%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-black to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/70 via-black to-black" />
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-36">
-          <div className="max-w-4xl">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={stagger}
+          className="relative mx-auto max-w-7xl px-6 py-24 md:py-36"
+        >
+          <motion.div variants={fadeUp} className="max-w-4xl">
             <div className="mb-6 inline-flex rounded-full border border-[#00539B]/40 bg-[#00539B]/10 px-4 py-2 text-xs tracking-[0.25em] text-[#7fb8ff]">
               NEXT-GENERATION DEVELOPMENT PROGRAM
             </div>
@@ -56,13 +82,19 @@ export default function DragonOnePage() {
               effort, focused on pump-fed propulsion, regenerative cooling, and a
               more advanced collegiate engine architecture.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <motion.div
+            variants={stagger}
+            className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          >
             {specs.map((item) => (
-              <div
+              <motion.div
                 key={item.label}
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 shadow-[0_0_40px_rgba(0,83,155,0.08)] backdrop-blur transition hover:border-[#00539B]/50 hover:bg-[#00539B]/10"
+                variants={fadeUp}
+                whileHover={{ y: -6, scale: 1.02 }}
+                transition={{ duration: 0.25 }}
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 shadow-[0_0_40px_rgba(0,83,155,0.08)] backdrop-blur hover:border-[#00539B]/50 hover:bg-[#00539B]/10"
               >
                 <div className="text-xs uppercase tracking-[0.25em] text-gray-500">
                   {item.label}
@@ -70,14 +102,20 @@ export default function DragonOnePage() {
                 <div className="mt-3 text-xl font-medium text-white">
                   {item.value}
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* VISION */}
-      <section className="relative border-b border-white/5 bg-zinc-950">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.25 }}
+        variants={fadeUp}
+        className="relative border-b border-white/5 bg-zinc-950"
+      >
         <div className="absolute inset-0 bg-[radial-gradient(45%_50%_at_85%_20%,rgba(0,83,155,0.18)_0%,transparent_60%)]" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-20">
@@ -100,31 +138,42 @@ export default function DragonOnePage() {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* ARCHITECTURE STRIP */}
+      {/* ARCHITECTURE */}
       <section className="border-b border-white/5 bg-black">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <p className="text-xs tracking-[0.3em] text-gray-500">
             SYSTEM ARCHITECTURE
           </p>
 
-          <div className="mt-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={stagger}
+            className="mt-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6"
+          >
             <div className="grid gap-4 md:grid-cols-5">
               {["Tanks", "Feed System", "Turbopump", "Injector", "Chamber"].map(
                 (item, index) => (
-                  <div key={item} className="relative">
+                  <motion.div
+                    key={item}
+                    variants={fadeUp}
+                    whileHover={{ y: -4, scale: 1.03 }}
+                    className="relative"
+                  >
                     <div className="rounded-2xl border border-[#00539B]/30 bg-[#00539B]/10 px-5 py-6 text-center text-sm font-medium text-white">
                       {item}
                     </div>
                     {index < 4 && (
                       <div className="absolute right-[-18px] top-1/2 hidden h-px w-8 bg-[#00539B]/60 md:block" />
                     )}
-                  </div>
+                  </motion.div>
                 )
               )}
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -136,22 +185,31 @@ export default function DragonOnePage() {
             Program pillars
           </h2>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={stagger}
+            className="mt-8 grid gap-6 md:grid-cols-3"
+          >
             {pillars.map((item) => (
-              <div
+              <motion.div
                 key={item.title}
-                className="group rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-[#00539B]/50 hover:shadow-[0_0_50px_rgba(0,83,155,0.16)]"
+                variants={fadeUp}
+                whileHover={{ y: -8, scale: 1.02 }}
+                transition={{ duration: 0.25 }}
+                className="group rounded-3xl border border-white/10 bg-white/[0.04] p-6 hover:border-[#00539B]/50 hover:shadow-[0_0_50px_rgba(0,83,155,0.16)]"
               >
-                <div className="h-1 w-12 rounded-full bg-[#00539B] transition group-hover:w-20" />
+                <div className="h-1 w-12 rounded-full bg-[#00539B] transition-all duration-300 group-hover:w-20" />
                 <div className="mt-6 text-lg font-medium text-[#7fb8ff]">
                   {item.title}
                 </div>
                 <p className="mt-3 text-sm leading-6 text-gray-300">
                   {item.body}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -163,11 +221,20 @@ export default function DragonOnePage() {
             Development path
           </h2>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={stagger}
+            className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5"
+          >
             {roadmap.map((step, index) => (
-              <div
+              <motion.div
                 key={step}
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-[#00539B]/50 hover:bg-[#00539B]/10"
+                variants={fadeUp}
+                whileHover={{ y: -6, scale: 1.02 }}
+                transition={{ duration: 0.25 }}
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 hover:border-[#00539B]/50 hover:bg-[#00539B]/10"
               >
                 <div className="text-xs tracking-[0.25em] text-gray-500">
                   PHASE {index + 1}
@@ -175,16 +242,22 @@ export default function DragonOnePage() {
                 <div className="mt-3 text-sm font-medium text-white">
                   {step}
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* STATUS */}
       <section className="bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <div className="rounded-3xl border border-[#00539B]/30 bg-[#00539B]/10 p-8 shadow-[0_0_60px_rgba(0,83,155,0.12)]">
+          <motion.div
+            initial={{ opacity: 0, y: 28, scale: 0.98 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.45 }}
+            className="rounded-3xl border border-[#00539B]/30 bg-[#00539B]/10 p-8 shadow-[0_0_60px_rgba(0,83,155,0.12)]"
+          >
             <p className="text-xs tracking-[0.3em] text-[#7fb8ff]">STATUS</p>
             <h2 className="mt-3 text-3xl font-semibold text-white">
               Early-stage development
@@ -194,7 +267,7 @@ export default function DragonOnePage() {
               progresses, this page will be updated with technical analyses,
               subsystem designs, test data, and validated milestones.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
