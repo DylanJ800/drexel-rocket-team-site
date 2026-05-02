@@ -13,7 +13,7 @@ const subteams = [
     name: "Propulsion",
     lead: "William Richards",
     description:
-      "Develops engine architecture, combustion devices, injector concepts, chamber/nozzle design, analysis, and test integration.",
+      "Develops combustion devices, injector concepts, chamber/nozzle design, analysis, and test integration.",
   },
   {
     name: "Stage 0",
