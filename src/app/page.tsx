@@ -2,7 +2,7 @@ import Link from "next/link";
 import Navbar from "@/Components/Navbar";
 
 export default function AVXLanding() {
-  const sponsors = [{ name: "Synnax", logo: "/sponsors/synnax.png" }, 
+  const sponsors = [{ name: "Synnax", logo: "/sponsors/synnax.jpg" }, 
     { name: "Altium", logo: "/sponsors/altium.png" }];
 
 
