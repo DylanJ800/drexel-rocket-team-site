@@ -112,7 +112,7 @@ export default function Navbar() {
             href="/positions"
             className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60"
           >
-            Open Positions
+            Join Us 
           </Link>
         </div>
       </nav>
