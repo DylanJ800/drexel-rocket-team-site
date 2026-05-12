@@ -35,7 +35,7 @@ const subteams = [
   },
   {
     name: "Turbomachinery",
-    lead: "Dylan Joseph",
+    lead: "Brian Tsymbal",
     description:
       "Focuses on pump-fed engine development, pump sizing, turbine architecture, rotating machinery, and analysis tools.",
   },
