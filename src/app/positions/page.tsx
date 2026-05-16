@@ -201,9 +201,7 @@ export default function PositionsPage() {
                       {team.name}
                     </h3>
 
-                    <p className="mt-2 text-sm text-gray-400">
-                      Lead: {team.lead}
-                    </p>
+
                   </div>
 
                   <div className="rounded-full border border-white/10 px-3 py-1 text-xs text-gray-300 transition group-hover:border-[#00539B]/60 group-hover:bg-[#00539B]/15 group-hover:text-white">
