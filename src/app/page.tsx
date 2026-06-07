@@ -3,7 +3,7 @@ import Navbar from "@/Components/Navbar";
 
 export default function AVXLanding() {
   const sponsors = [{ name: "Synnax", logo: "/sponsors/synnax.jpg" }, 
-    { name: "Altium", logo: "/sponsors/altium.png" }];
+    { name: "Altium", logo: "/sponsors/altium.png" },  { name: "CFTurbo", logo: "/sponsors/CF.png" }];
 
 
   const developmentPrograms = [
