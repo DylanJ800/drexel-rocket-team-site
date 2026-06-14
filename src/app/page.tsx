@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navbar from "@/Components/Navbar";
+import Starfield from "@/Components/Starfield";
 
 export default function AVXLanding() {
   const sponsors = [{ name: "Synnax", logo: "/sponsors/synnax.jpg" }, 
@@ -64,8 +65,10 @@ export default function AVXLanding() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-gray-100 selection:bg-white/20">
-      <Navbar />
+    // <div className="relative min-h-screen bg-black text-gray-100 selection:bg-white/20">
+    //   <Starfield />
+      <div className="min-h-screen bg-black text-gray-100 selection:bg-white/20">
+        <Navbar />
 
       {/* HERO */}
       <section id="home" className="relative min-h-[82vh] overflow-hidden">
@@ -395,5 +398,6 @@ export default function AVXLanding() {
         </div>
       </footer>
     </div>
+ // </div>
   );
 }
