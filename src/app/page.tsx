@@ -170,7 +170,7 @@ export default function AVXLanding() {
                 ].map((c, i) => (
                   <div
                     key={i}
-                    className="rounded-2xl border border-white/10 bg-white/5 p-5"
+                    className="rounded-2xl border border-white/10 bg-white/5 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#00539B]/50 hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(0,83,155,0.18)]"
                   >
                     <div className="text-sm font-medium text-[#00539B]">
                       {c.title}
@@ -183,7 +183,97 @@ export default function AVXLanding() {
           </div>
         </div>
       </section>
+      {/* TEST CAMPAIGN / PROOF */}
+<section id="test-campaign" className="border-t border-white/5 bg-black">
+  <div className="mx-auto max-w-7xl px-6 py-20">
+    <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+      <div className="lg:col-span-5">
+        <p className="text-xs tracking-[0.3em] text-gray-500">
+          FROM CAD TO STATIC FIRE
+        </p>
 
+        <h2 className="mt-4 text-2xl font-semibold text-white md:text-4xl">
+          Built to test. Designed to iterate.
+        </h2>
+
+        <p className="mt-5 text-gray-300">
+          Ambition One is our pressure-fed liquid engine test platform,
+          built to validate the full stack required for liquid propulsion:
+          feed systems, ignition, controls, ground support equipment,
+          operations, and post-test data review.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="/countdown"
+            className="rounded-2xl bg-[#00539B] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#003f79]"
+          >
+            View Test Campaign
+          </a>
+
+          <a
+            href="#development"
+            className="rounded-2xl border border-[#00539B]/50 px-5 py-2.5 text-sm font-medium text-gray-200 hover:bg-[#00539B]/10"
+          >
+            Explore Engines
+          </a>
+        </div>
+      </div>
+
+      <div className="lg:col-span-7">
+        <div className="grid gap-4 md:grid-cols-2">
+          {[
+            {
+              title: "Engine Hardware",
+              body: "Injector, chamber, plumbing, and propulsion integration.",
+            },
+            {
+              title: "Ground Systems",
+              body: "Valves, tanks, instrumentation, procedures, and pad operations.",
+            },
+            {
+              title: "Controls & Data",
+              body: "Sequencing, telemetry, sensors, and post-test review.",
+            },
+            {
+              title: "Design Review",
+              body: "Every test feeds the next design cycle.",
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-[#00539B]/50 hover:bg-white/[0.07] hover:shadow-[0_0_40px_rgba(0,83,155,0.18)]"
+            >
+              <div className="text-sm font-medium text-[#00539B]">
+                {item.title}
+              </div>
+              <p className="mt-2 text-sm text-gray-300">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        { value: "2", label: "Liquid Engine Programs" },
+        { value: "5+", label: "Major Subsystems" },
+        { value: "2026", label: "Static Fire Campaign" },
+        { value: "∞", label: "Design Iterations" },
+      ].map((stat, i) => (
+        <div
+          key={i}
+          className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#00539B]/50 hover:bg-white/[0.06]"
+        >
+          <div className="text-3xl font-semibold text-white">{stat.value}</div>
+          <div className="mt-2 text-xs uppercase tracking-[0.2em] text-gray-500">
+            {stat.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>          
       {/* DEVELOPMENT */}
       <section id="development" className="border-t border-white/5 bg-zinc-950">
         <div className="mx-auto max-w-7xl px-6 py-20">
