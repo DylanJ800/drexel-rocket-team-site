@@ -13,7 +13,7 @@ const teamMembers = [
     role: "Lead GNC Engineer",
     blurb:
       "Responsible for avionics, software, controls integration, electrical systems development, and mission critical software.",
-    image: "/media/team/ts.png",
+    image: "v",
   },
   {
     name: "William Richards",
@@ -34,22 +34,43 @@ const teamMembers = [
     role: "Operations Lead \n SR. GNC Engineer (Electrical)",
     blurb:
       "Supports logistics, planning, operational structure, and campaign coordination as the team grows.",
-    image: "/media/team/dhruv.jpg",
+    image: "/media/team/ts.png",
   },
   {
     name: "Sophia Vesci",
     role: "Propulsion Engineer",
     blurb:
-      "Supports mechanical design, propulsion systems, and integration efforts across the team.",
-    image: "/media/team/sophia.jpg",
+      "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
+    image: "/media/team/ts.png",
   },
   {
     name: "Anup Pilla",
     role: "SR. GNC Engineer (Software)",
     blurb:
       "Supports avionics, software, controls integration, and electrical systems development.",
-    image: "/media/team/anup.jpg",
+    image: "/media/team/ts.png",
   },
+   {
+    name: "Harnoor Singh",
+    role: "Mechanical Engineer",
+    blurb:
+      "Supports mechanical design, structures, and integration efforts across the team.",
+    image: "/media/team/ts.png",
+  },
+     {
+    name: "Isaac Challingsworth",
+    role: "Propulsion Engineer",
+    blurb:
+      "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
+    image: "/media/team/ts.png",
+  },
+     {
+    name: "Michael Savage",
+    role: "GNC Engineer",
+    blurb:
+      "Supports avionics, software, controls development, and mission-critical integration activities.",
+    image: "/media/team/ts.png",
+  },  
 ];
 
 export default function TeamPage() {
