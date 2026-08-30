@@ -100,9 +100,9 @@ export default function Navbar() {
           </li>
 
           <li>
-            <a className="hover:text-[#00539B]" href="/#sponsors">
+            <Link className="hover:text-[#00539B]" href="/sponsors">
               Sponsors
-            </a>
+            </Link>
           </li>
         </ul>
 
