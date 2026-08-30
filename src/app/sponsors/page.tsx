@@ -53,7 +53,6 @@ export default function SponsorsPage() {
       <Navbar />
 
       <main>
-        {/* HERO */}
         <section className="relative overflow-hidden border-b border-white/5 bg-black">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_80%_at_80%_20%,rgba(0,83,155,0.22)_0%,transparent_60%)]" />
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(9,9,11,0.8))]" />
@@ -70,12 +69,12 @@ export default function SponsorsPage() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#partner"
+              <Link
+                href="/sponsors/inquiry"
                 className="rounded-2xl bg-[#00539B] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#0068c4]"
               >
-                Become a Partner
-              </a>
+                Become a Sponsor
+              </Link>
               <a
                 href="#current-partners"
                 className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-medium text-gray-200 transition hover:border-[#00539B]/60 hover:bg-[#00539B]/10"
@@ -86,7 +85,6 @@ export default function SponsorsPage() {
           </div>
         </section>
 
-        {/* CURRENT PARTNERS */}
         <section id="current-partners" className="border-b border-white/5 bg-zinc-950">
           <div className="mx-auto max-w-7xl px-6 py-20">
             <div className="max-w-2xl">
@@ -116,7 +114,6 @@ export default function SponsorsPage() {
           </div>
         </section>
 
-        {/* WHY PARTNER */}
         <section className="border-b border-white/5 bg-black">
           <div className="mx-auto max-w-7xl px-6 py-20">
             <div className="grid gap-10 lg:grid-cols-12">
@@ -148,7 +145,6 @@ export default function SponsorsPage() {
           </div>
         </section>
 
-        {/* PROGRAM IMPACT */}
         <section className="border-b border-white/5 bg-zinc-950">
           <div className="mx-auto max-w-7xl px-6 py-20">
             <p className="text-xs uppercase tracking-[0.3em] text-gray-500">Program Impact</p>
@@ -178,8 +174,7 @@ export default function SponsorsPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section id="partner" className="bg-black">
+        <section className="bg-black">
           <div className="mx-auto max-w-7xl px-6 py-24">
             <div className="relative overflow-hidden rounded-[2rem] border border-[#00539B]/30 bg-[#00539B]/10 px-7 py-12 md:px-12 md:py-16">
               <div className="pointer-events-none absolute right-0 top-0 h-64 w-64 rounded-full bg-[#00539B]/20 blur-3xl" />
@@ -192,12 +187,12 @@ export default function SponsorsPage() {
                   We welcome financial, hardware, software, manufacturing, technical, and in-kind partnerships from organizations interested in advancing hands-on aerospace engineering education.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a
-                    href="mailto:drexelrocketteam@gmail.com"
+                  <Link
+                    href="/sponsors/inquiry"
                     className="rounded-2xl bg-[#00539B] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#0068c4]"
                   >
-                    Contact the Team
-                  </a>
+                    Become a Sponsor
+                  </Link>
                   <Link
                     href="/"
                     className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-medium text-gray-200 transition hover:bg-white/5"
