@@ -28,7 +28,7 @@ export default function SponsorInquiryPage() {
               <div className="border-b border-white/10 pb-7">
                 <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Start a Conversation</p>
                 <h2 className="mt-3 text-2xl font-semibold text-white">We&apos;d love to hear from you.</h2>
-                <p className="mt-2 text-sm leading-6 text-gray-400">Thank you for your interest in supporting Drexel Rocket Team. Tell us a little about you and your organization, and we&apos;ll be happy to start the conversation from there.</p>
+                <p className="mt-2 text-sm leading-6 text-gray-400">Thank you for your interest in supporting Drexel Rocket Team. We look forward to connecting.</p>
               </div>
 
               <form className="mt-8 space-y-7">
