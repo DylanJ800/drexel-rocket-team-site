@@ -6,6 +6,9 @@ export default function SponsorsPage() {
     { name: "Synnax", logo: "/sponsors/synnax.jpg", website: "https://www.synnaxlabs.com/" },
     { name: "Altium", logo: "/sponsors/altium.png", website: "https://www.altium.com/" },
     { name: "CFTurbo", logo: "/sponsors/CF.png", website: "https://cfturbo.com/" },
+    { name: "Lockheed Martin", logo: "/sponsors/Lockheed.jpg", website: "https://www.lockheedmartin.com/en-us/index.html" },
+    { name: "Ansys", logo: "/sponsors/ansys.jpg", website: "https://ansys.synopsys.com/" },
+    { name: "SECO SEALS", logo: "/sponsors/seco2.png", website: "https://secoseals.com/" },
   ];
 
   const partnershipBenefits = [
