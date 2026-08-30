@@ -66,7 +66,7 @@ export default function SponsorInquiryPage() {
                 </label>
 
                 <div className="rounded-2xl border border-[#00539B]/25 bg-[#00539B]/10 p-4 text-sm leading-6 text-gray-300">
-                  The inquiry form is currently in preview while we connect secure submission delivery. No information entered on this page is sent or stored yet. In the meantime, prospective sponsors are welcome to reach out directly at <span className="font-medium text-white">drexelrocketteam.edu</span>.
+                  The inquiry form is currently in preview while we connect secure submission delivery. No information entered on this page is sent or stored yet. In the meantime, prospective sponsors are welcome to reach out directly at <span className="font-medium text-white">drexelrocketteam@drexel.edu</span>.
                 </div>
 
                 <button type="button" disabled className="cursor-not-allowed rounded-2xl bg-[#00539B]/45 px-6 py-3.5 text-sm font-medium text-white/60">Submit Inquiry — Coming Soon</button>
