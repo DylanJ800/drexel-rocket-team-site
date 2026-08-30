@@ -13,7 +13,7 @@ type TimelineItem = {
   event: string;
 };
 
-const staticFireDate = new Date("2026-05-15T12:00:00");
+const staticFireDate = new Date("2026-10-24T16:00:00");
 
 const statusItems: StatusItem[] = [
   { label: "Range", state: "GO", note: "Range is green" },
@@ -94,7 +94,7 @@ export default function CountdownPage() {
             href="/positions"
             className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60"
           >
-            Open Positions
+            Student Roles
           </a>
         </nav>
       </header>
