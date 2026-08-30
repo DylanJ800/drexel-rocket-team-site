@@ -51,8 +51,19 @@ export default function SponsorsPage() {
             </div>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {sponsors.map((s) => (
-                <a key={s.name} href={s.website} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${s.name} website`} className="group flex h-40 items-center justify-center rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#00539B]/50 hover:bg-white/[0.07] hover:shadow-[0_0_45px_rgba(0,83,155,0.14)]">
-                  <img src={s.logo} alt={`${s.name} logo`} className="max-h-20 max-w-[80%] object-contain transition duration-300 group-hover:scale-[1.03]" />
+                <a
+                  key={s.name}
+                  href={s.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${s.name} website`}
+                  className="group relative flex h-40 items-center justify-center overflow-hidden rounded-3xl border border-[#00539B]/20 bg-white/[0.04] p-7 shadow-[0_0_28px_rgba(0,83,155,0.07)] transition duration-300 hover:-translate-y-1 hover:border-[#00539B]/65 hover:bg-white/[0.07] hover:shadow-[0_0_48px_rgba(0,83,155,0.22)]"
+                >
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,83,155,0.08),transparent_70%)] opacity-70 transition duration-300 group-hover:opacity-100" />
+                  <img src={s.logo} alt={`${s.name} logo`} className="relative z-10 max-h-20 max-w-[80%] object-contain transition duration-300 group-hover:scale-[1.03]" />
+                  <div className="pointer-events-none absolute bottom-3 right-4 z-20 translate-y-1 font-[family-name:var(--font-roboto-condensed)] text-[10px] font-semibold uppercase tracking-[0.16em] text-[#7fb8ff] opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    Visit Sponsor ↗
+                  </div>
                 </a>
               ))}
             </div>
