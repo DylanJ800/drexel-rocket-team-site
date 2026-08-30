@@ -27,8 +27,8 @@ export default function SponsorInquiryPage() {
             <div className="rounded-[2rem] border border-white/10 bg-black p-6 md:p-9">
               <div className="border-b border-white/10 pb-7">
                 <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Start a Conversation</p>
-                <h2 className="mt-3 text-2xl font-semibold text-white">Tell us a little about your organization.</h2>
-                <p className="mt-2 text-sm leading-6 text-gray-400">We appreciate your interest in the team. A few details will help us understand how we can best continue the conversation.</p>
+                <h2 className="mt-3 text-2xl font-semibold text-white">We&apos;d love to hear from you.</h2>
+                <p className="mt-2 text-sm leading-6 text-gray-400">Thank you for your interest in supporting Drexel Rocket Team. Tell us a little about you and your organization, and we&apos;ll be happy to start the conversation from there.</p>
               </div>
 
               <form className="mt-8 space-y-7">
@@ -65,7 +65,9 @@ export default function SponsorInquiryPage() {
                   <textarea className={`${inputClass} min-h-40 resize-y`} name="message" placeholder="Tell us about your organization, the support you have in mind, or anything else you'd like us to know. We're excited to hear from you." />
                 </label>
 
-                <div className="rounded-2xl border border-[#00539B]/25 bg-[#00539B]/10 p-4 text-sm leading-6 text-gray-300">The inquiry form is currently in preview while we connect secure submission delivery. No information entered on this page is sent or stored yet.</div>
+                <div className="rounded-2xl border border-[#00539B]/25 bg-[#00539B]/10 p-4 text-sm leading-6 text-gray-300">
+                  The inquiry form is currently in preview while we connect secure submission delivery. No information entered on this page is sent or stored yet. In the meantime, prospective sponsors are welcome to reach out directly at <span className="font-medium text-white">drexelrocketteam.edu</span>.
+                </div>
 
                 <button type="button" disabled className="cursor-not-allowed rounded-2xl bg-[#00539B]/45 px-6 py-3.5 text-sm font-medium text-white/60">Submit Inquiry — Coming Soon</button>
               </form>
