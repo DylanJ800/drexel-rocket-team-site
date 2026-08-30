@@ -22,19 +22,22 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const navText =
+    "font-[family-name:var(--font-roboto-condensed)] text-[15px] font-semibold uppercase tracking-[0.08em] transition hover:text-[#00539B]";
+
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-black/70 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-black/80 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-widest text-[#07294D]"
+          className="font-[family-name:var(--font-roboto-condensed)] text-[15px] font-bold uppercase tracking-[0.12em] text-[#00539B]"
         >
-          DREXEL ROCKET TEAM
+          Drexel Rocket Team
         </Link>
 
-        <ul className="hidden items-center gap-8 text-sm text-gray-300 md:flex">
+        <ul className="hidden items-center gap-9 text-gray-300 md:flex">
           <li>
-            <a className="hover:text-[#00539B]" href="/#mission">
+            <a className={navText} href="/#mission">
               Mission
             </a>
           </li>
@@ -42,11 +45,11 @@ export default function Navbar() {
           <li className="relative" ref={dropdownRef}>
             <button
               onClick={() => setOpen((prev) => !prev)}
-              className="flex items-center gap-2 hover:text-[#00539B]"
+              className={`${navText} flex items-center gap-2`}
               type="button"
             >
               Development
-              <span className="text-xs">{open ? "▲" : "▼"}</span>
+              <span className="text-[9px]">{open ? "▲" : "▼"}</span>
             </button>
 
             {open && (
@@ -56,7 +59,7 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className="block border-b border-white/5 px-5 py-4 transition hover:bg-white/5"
                 >
-                  <div className="text-sm font-medium text-white">
+                  <div className="font-[family-name:var(--font-roboto-condensed)] text-sm font-semibold uppercase tracking-[0.06em] text-white">
                     Ambition One
                   </div>
                   <div className="mt-1 text-xs text-gray-400">
@@ -69,7 +72,7 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className="block border-b border-white/5 px-5 py-4 transition hover:bg-white/5"
                 >
-                  <div className="text-sm font-medium text-white">
+                  <div className="font-[family-name:var(--font-roboto-condensed)] text-sm font-semibold uppercase tracking-[0.06em] text-white">
                     Dragon One
                   </div>
                   <div className="mt-1 text-xs text-gray-400">
@@ -82,7 +85,7 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className="block px-5 py-4 transition hover:bg-white/5"
                 >
-                  <div className="text-sm font-medium text-white">
+                  <div className="font-[family-name:var(--font-roboto-condensed)] text-sm font-semibold uppercase tracking-[0.06em] text-white">
                     Chariot
                   </div>
                   <div className="mt-1 text-xs text-gray-400">
@@ -94,13 +97,13 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link className="hover:text-[#00539B]" href="/team">
+            <Link className={navText} href="/team">
               Team
             </Link>
           </li>
 
           <li>
-            <Link className="hover:text-[#00539B]" href="/sponsors">
+            <Link className={navText} href="/sponsors">
               Sponsors
             </Link>
           </li>
@@ -110,9 +113,9 @@ export default function Navbar() {
           <CountdownBadge />
           <Link
             href="/positions"
-            className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 text-sm hover:bg-[#07294D]/60"
+            className="rounded-xl border border-white/10 bg-[#07294D]/40 px-4 py-2 font-[family-name:var(--font-roboto-condensed)] text-sm font-semibold uppercase tracking-[0.07em] hover:bg-[#07294D]/60"
           >
-            Join Us 
+            Join Us
           </Link>
         </div>
       </nav>
