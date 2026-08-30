@@ -25,6 +25,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Sponsors now live on their own /sponsors page. */
+#sponsors {
+  display: none;
+}
+
 .star-twinkle {
   animation-name: star-twinkle;
   animation-timing-function: ease-in-out;
