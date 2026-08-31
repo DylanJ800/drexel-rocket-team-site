@@ -60,7 +60,15 @@ export default function SponsorsPage() {
                   className="group relative flex h-40 items-center justify-center overflow-hidden rounded-3xl border border-[#00539B]/25 bg-white/[0.04] p-7 shadow-[0_0_34px_rgba(0,83,155,0.12)] transition duration-300 hover:-translate-y-1 hover:border-[#00539B]/75 hover:bg-white/[0.075] hover:shadow-[0_0_58px_rgba(0,83,155,0.30)]"
                 >
                   <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,83,155,0.12),transparent_70%)] opacity-80 transition duration-300 group-hover:opacity-100" />
-                  <img src={s.logo} alt={`${s.name} logo`} className="relative z-10 max-h-20 max-w-[80%] object-contain transition duration-300 group-hover:scale-[1.03]" />
+                  <img
+                    src={s.logo}
+                    alt={`${s.name} logo`}
+                    className={`relative z-10 object-contain transition duration-300 group-hover:scale-[1.03] ${
+                      s.name === "SECO SEALS"
+                        ? "max-h-28 max-w-[95%]"
+                        : "max-h-20 max-w-[80%]"
+                    }`}
+                  />
                   <div className="pointer-events-none absolute bottom-3 right-4 z-20 translate-y-1 font-[family-name:var(--font-roboto-condensed)] text-[10px] font-semibold uppercase tracking-[0.16em] text-[#7fb8ff] opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     Visit Sponsor ↗
                   </div>
