@@ -8,7 +8,7 @@ export default function SponsorsPage() {
     { name: "CFTurbo", logo: "/sponsors/CF.png", website: "https://cfturbo.com/" },
     { name: "Lockheed Martin", logo: "/sponsors/Lockheed.jpg", website: "https://www.lockheedmartin.com/en-us/index.html" },
     { name: "Ansys", logo: "/sponsors/ansys.jpg", website: "https://ansys.synopsys.com/" },
-    { name: "SECO SEALS", logo: "/sponsors/seco2.png", website: "https://secoseals.com/" },
+    { name: "SECO SEALS", logo: "/sponsors/seco3.png", website: "https://secoseals.com/" },
   ];
 
   const partnershipBenefits = [
