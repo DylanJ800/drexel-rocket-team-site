@@ -9,13 +9,6 @@ const teamMembers = [
     image: "/media/team/ts.png",
   },
   {
-    name: "Quincey Daniel",
-    role: "Lead GNC Engineer",
-    blurb:
-      "Responsible for avionics, software, controls integration, electrical systems development, and mission critical software.",
-    image: "v",
-  },
-  {
     name: "William Richards",
     role: "Lead Propulsion Engineer",
     blurb:
@@ -31,11 +24,18 @@ const teamMembers = [
   },
   {
     name: "Dhruv Patel",
-    role: "Operations Lead \n SR. GNC Engineer (Electrical)",
+    role: "Operations Lead \n Lead GNC Engineer",
     blurb:
       "Supports logistics, planning, operational structure, and campaign coordination as the team grows.",
     image: "/media/team/ts.png",
   },
+  {
+    name: "Michael Savage",
+    role: "GNC Engineer",
+    blurb:
+      "Supports avionics, software, controls development, and mission-critical integration activities.",
+    image: "/media/team/ts.png",
+  },  
   {
     name: "Sophia Vesci",
     role: "Propulsion Engineer",
