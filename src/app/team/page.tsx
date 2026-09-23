@@ -24,7 +24,7 @@ const teamMembers = [
   },
   {
     name: "Dhruv Patel",
-    role: "Operations Lead \n Lead GNC Engineer",
+    role: "Operations Lead \nLead GNC Engineer",
     blurb:
       "Supports logistics, planning, operational structure, and campaign coordination as the team grows.",
     image: "/media/team/ts.png",
