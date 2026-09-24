@@ -64,13 +64,6 @@ const teamMembers = [
       "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
     image: "/media/team/ts.png",
   },
-     {
-    name: "Michael Savage",
-    role: "GNC Engineer",
-    blurb:
-      "Supports avionics, software, controls development, and mission-critical integration activities.",
-    image: "/media/team/ts.png",
-  },  
 ];
 
 export default function TeamPage() {
