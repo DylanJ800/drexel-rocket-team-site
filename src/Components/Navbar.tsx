@@ -47,13 +47,18 @@ export default function Navbar() {
               onClick={() => setOpen((prev) => !prev)}
               className={`${navText} flex items-center gap-2`}
               type="button"
+              aria-expanded={open}
+              aria-controls="development-links"
+              onKeyDown={(event) => {
+                if (event.key === "Escape") setOpen(false);
+              }}
             >
               Development
               <span className="text-[9px]">{open ? "▲" : "▼"}</span>
             </button>
 
             {open && (
-              <div className="absolute left-0 top-full mt-3 w-64 overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/95 shadow-2xl backdrop-blur">
+              <div id="development-links" className="absolute left-0 top-full mt-3 w-64 overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/95 shadow-2xl backdrop-blur">
                 <Link
                   href="/ambition-one"
                   onClick={() => setOpen(false)}
@@ -83,13 +88,25 @@ export default function Navbar() {
                 <Link
                   href="/chariot"
                   onClick={() => setOpen(false)}
-                  className="block px-5 py-4 transition hover:bg-white/5"
+                  className="block border-b border-white/5 px-5 py-4 transition hover:bg-white/5"
                 >
                   <div className="font-[family-name:var(--font-roboto-condensed)] text-sm font-semibold uppercase tracking-[0.06em] text-white">
                     Chariot
                   </div>
                   <div className="mt-1 text-xs text-gray-400">
                     Long-term launch vehicle program • NET 2028
+                  </div>
+                </Link>
+                <Link
+                  href="/simlab"
+                  onClick={() => setOpen(false)}
+                  className="block px-5 py-4 transition hover:bg-white/5"
+                >
+                  <div className="font-[family-name:var(--font-roboto-condensed)] text-sm font-semibold uppercase tracking-[0.06em] text-white">
+                    SIMLAB
+                  </div>
+                  <div className="mt-1 text-xs text-gray-400">
+                    Simulation, verification & engineering data
                   </div>
                 </Link>
               </div>
@@ -119,6 +136,21 @@ export default function Navbar() {
           </Link>
         </div>
       </nav>
+      <details className="border-t border-white/10 px-6 py-3 text-gray-300 md:hidden">
+        <summary className={`${navText} cursor-pointer`}>Development</summary>
+        <ul className="mt-3 grid grid-cols-2 gap-2 pb-1 text-sm">
+          {[
+            ["/ambition-one", "Ambition One"],
+            ["/dragon-one", "Dragon One"],
+            ["/chariot", "Chariot"],
+            ["/simlab", "SIMLAB"],
+          ].map(([href, label]) => (
+            <li key={href}>
+              <Link href={href} className="block rounded-lg px-3 py-3 hover:bg-white/5">{label}</Link>
+            </li>
+          ))}
+        </ul>
+      </details>
     </header>
   );
 }
