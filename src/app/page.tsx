@@ -34,7 +34,7 @@ export default function AVXLanding() {
       subtitle: "In-The-Loop Simulation Testing",
       details:
         "SIMLAB is the Drexel Rocket Team’s Simulation, Integration, Verification, and Engineering Data Laboratory, designed to test how rocket systems, software, hardware, and operators work together before physical testing or flight.",
-      href: "/chariot",
+      href: "/simlab",
     },
   ];
 
