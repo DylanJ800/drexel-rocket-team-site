@@ -8,7 +8,8 @@ export default function SponsorsPage() {
     { name: "CFTurbo", logo: "/sponsors/CF.png", website: "https://cfturbo.com/" },
     { name: "Lockheed Martin", logo: "/sponsors/Lockheed.jpg", website: "https://www.lockheedmartin.com/en-us/index.html" },
     { name: "Ansys", logo: "/sponsors/ansys.jpg", website: "https://ansys.synopsys.com/" },
-    { name: "SECO SEALS", logo: "/sponsors/seco2.png", website: "https://secoseals.com/" },
+    { name: "SECO SEALS", logo: "/sponsors/seco3.PNG", website: "https://secoseals.com/" },
+    { name: "SendCutSend", logo: "/sponsors/scs-logo-white.png", website: "https://sendcutsend.com/?srsltid=AU7gw4XYmkjnXcEctGb7kovGMTEnpUuIBLDXF-DvlNrgSi_1wmHg0zaz" },
   ];
 
   const partnershipBenefits = [

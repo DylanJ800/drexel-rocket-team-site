@@ -39,7 +39,7 @@ export default function AVXLanding() {
         "Leads overall architecture, technical direction, and major propulsion development efforts.",
     },
     {
-      name: "Quincey Daniel",
+      name: "Dhruv Patel",
       role: "Lead GNC Engineer",
       blurb:
         "Responsible for avionics, controls, software integration, and electrical systems.",

@@ -6,71 +6,78 @@ const teamMembers = [
     role: "President & Chief Engineer",
     blurb:
       "Leads team direction, propulsion architecture, major technical decisions, and integrated program development.",
-    image: "/media/team/ts.png",
-  },
-  {
-    name: "Quincey Daniel",
-    role: "Lead GNC Engineer",
-    blurb:
-      "Responsible for avionics, software, controls integration, electrical systems development, and mission critical software.",
-    image: "v",
+    image: "/media/team/dylan.jpeg",
   },
   {
     name: "William Richards",
     role: "Lead Propulsion Engineer",
     blurb:
       "Supports propulsion hardware, combustion systems, and engine integration",
-    image: "/media/team/ts.png",
+    image: "/media/team/avatar.jpg",
   },
   {
-    name: "Joe Maddi",
-    role: "Lead Stage 0 Engineer",
+    name: "Justyn Lanham",
+    role: "Lead SIMLAB Engineer",
     blurb:
-      "Focused on ground systems, pad equipment, and test-side infrastructure for engine operations.",
-    image: "/media/team/ts.png",
+      "Leads development of simulation and hardware-in-the-loop infrastructure for validating integrated rocket systems before testing.",
+    image: "/media/team/avatar.jpg",
   },
   {
     name: "Dhruv Patel",
-    role: "Operations Lead \n SR. GNC Engineer (Electrical)",
+    role: "Lead GNC Engineer & Operations Lead",
     blurb:
       "Supports logistics, planning, operational structure, and campaign coordination as the team grows.",
-    image: "/media/team/ts.png",
+    image: "/media/team/dhruv.jpg",
   },
+  {
+    name: "Michael Savage",
+    role: "GNC Engineer",
+    blurb:
+      "Supports avionics, software, controls development, and mission-critical integration activities.",
+    image: "/media/team/avatar.jpg",
+  },  
+  {
+    name: "Abdullah Sabir",
+    role: "Propulsion Engineer",
+    blurb:
+      "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
+    image: "/media/team/avatar.jpg",
+  }, 
+  {
+    name: "Luke Riffle",
+    role: "Propulsion Engineer",
+    blurb:
+      "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
+    image: "/media/team/avatar.jpg",
+  }, 
   {
     name: "Sophia Vesci",
     role: "Propulsion Engineer",
     blurb:
       "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
-    image: "/media/team/ts.png",
+    image: "/media/team/sophia.jpg",
   },
   {
     name: "Anup Pilla",
     role: "SR. GNC Engineer (Software)",
     blurb:
       "Supports avionics, software, controls integration, and electrical systems development.",
-    image: "/media/team/ts.png",
+    image: "/media/team/anup.jpg",
   },
    {
     name: "Harnoor Singh",
     role: "Mechanical Engineer",
     blurb:
       "Supports mechanical design, structures, and integration efforts across the team.",
-    image: "/media/team/ts.png",
+    image: "/media/team/avatar.jpg",
   },
      {
     name: "Isaac Challingsworth",
     role: "Propulsion Engineer",
     blurb:
       "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
-    image: "/media/team/ts.png",
+    image: "/media/team/avatar.jpg",
   },
-     {
-    name: "Michael Savage",
-    role: "GNC Engineer",
-    blurb:
-      "Supports avionics, software, controls development, and mission-critical integration activities.",
-    image: "/media/team/ts.png",
-  },  
 ];
 
 export default function TeamPage() {
