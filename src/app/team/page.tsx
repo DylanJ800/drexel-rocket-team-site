@@ -16,10 +16,10 @@ const teamMembers = [
     image: "/media/team/avatar.jpg",
   },
   {
-    name: "Emily Chen",
-    role: "Lead Stage 0 Engineer",
+    name: "Justyn Lanham",
+    role: "Lead SIMLAB Engineer",
     blurb:
-      "Focused on ground systems, pad equipment, and test-side infrastructure for engine operations.",
+      "Leads development of simulation and hardware-in-the-loop infrastructure for validating integrated rocket systems before testing.",
     image: "/media/team/avatar.jpg",
   },
   {
