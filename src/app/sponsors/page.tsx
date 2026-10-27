@@ -3,7 +3,7 @@ import Navbar from "@/Components/Navbar";
 
 export default function SponsorsPage() {
   const sponsors = [
-    { name: "Synnax", logo: "/sponsors/synnax.jpg", website: "https://www.synnaxlabs.com/" },
+    { name: "Synnax", logo: "/sponsors/synnax-logo.jpg", website: "https://www.synnaxlabs.com/" },
     { name: "Altium", logo: "/sponsors/altium.png", website: "https://www.altium.com/" },
     { name: "CFTurbo", logo: "/sponsors/CF.png", website: "https://cfturbo.com/" },
     { name: "Lockheed Martin", logo: "/sponsors/Lockheed.jpg", website: "https://www.lockheedmartin.com/en-us/index.html" },
