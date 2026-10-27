@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/Components/Navbar";
+import SimlabSignalFlow from "@/Components/SimlabSignalFlow";
 
 export const metadata: Metadata = {
   title: "SIMLAB | Drexel Rocket Team",
@@ -77,6 +78,9 @@ export default function SimlabPage() {
           </div>
         </section>
 
+        
+        <SimlabSignalFlow />
+
         <section aria-labelledby="scenario" className="border-y border-white/10 bg-zinc-950">
           <div className="mx-auto max-w-7xl px-6 py-16">
             <p className="text-xs tracking-[0.3em] text-gray-400">REPRESENTATIVE FUTURE SCENARIO</p>
@@ -96,7 +100,7 @@ export default function SimlabPage() {
             </ol>
           </div>
         </section>
-
+        
         <section aria-labelledby="interfaces" className="mx-auto max-w-7xl px-6 py-16">
           <p className="text-xs tracking-[0.3em] text-gray-400">CROSS-TEAM INTERFACES</p>
           <h2 id="interfaces" className="mt-3 text-3xl font-semibold">Built with every discipline</h2>
