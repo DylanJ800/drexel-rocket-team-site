@@ -37,6 +37,20 @@ const teamMembers = [
     image: "/media/team/avatar.jpg",
   },  
   {
+    name: "Abdullah Sabir",
+    role: "Propulsion Engineer",
+    blurb:
+      "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
+    image: "/media/team/avatar.jpg",
+  }, 
+  {
+    name: "Luke Riffle",
+    role: "Propulsion Engineer",
+    blurb:
+      "Supports propulsion hardware development, engineering analysis, testing, and subsystem integration activities.",
+    image: "/media/team/avatar.jpg",
+  }, 
+  {
     name: "Sophia Vesci",
     role: "Propulsion Engineer",
     blurb:
