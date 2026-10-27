@@ -54,3 +54,21 @@ body {
     animation: none;
   }
 }
+
+.simlab-flow {
+  background-color: #06080b;
+  background-image:
+    radial-gradient(circle, #ffffff0d 1px, transparent 1px),
+    radial-gradient(
+      ellipse at center,
+      #00539b12,
+      transparent 70%
+    );
+  background-size: 20px 20px, 100% 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .simlab-packet {
+    display: none;
+  }
+}
