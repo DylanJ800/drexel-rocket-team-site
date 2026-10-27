@@ -29,6 +29,13 @@ export default function AVXLanding() {
         "Chariot is a future launch vehicle concept planned as part of the team’s long-term development roadmap. The program is currently conceptual and is not yet in active development.",
       href: "/chariot",
     },
+    {
+      name: "SIMLAB",
+      subtitle: "In-The-Loop Simulation Testing",
+      details:
+        "SIMLAB is the Drexel Rocket Team’s Simulation, Integration, Verification, and Engineering Data Laboratory, designed to test how rocket systems, software, hardware, and operators work together before physical testing or flight.",
+      href: "/chariot",
+    },
   ];
 
   const leadershipPreview = [

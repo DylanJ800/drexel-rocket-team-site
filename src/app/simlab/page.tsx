@@ -30,10 +30,10 @@ const roadmap = [
 ];
 
 const interfaces = [
-  ["Propulsion", "Engine and pump models, operating limits, and test data inform transient simulation and uncertainty studies."],
+  ["Propulsion", "Engine models, operating limits, and test data inform transient simulation and uncertainty studies."],
   ["Avionics, Controls & GNC", "Flight software, state machines, and communications connect to virtual sensors, actuators, and timing checks."],
   ["Stage 0 & Operations", "Ground-system interfaces and procedures support virtual servicing, countdowns, and operator rehearsals."],
-  ["Structures & Manufacturing", "Geometry, mass, inertia, structural constraints, and as-built differences inform vehicle models."],
+  ["Turbomachinery", "Turbopump models, performance maps, operational data informing transient & steady-state conditions."],
 ];
 
 export default function SimlabPage() {
